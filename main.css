@@ -1,0 +1,324 @@
+body{
+    color: #333;
+    font-size: 16px;
+}
+.navbar {
+    background: linear-gradient(#d3c59f,transparent);
+}
+.navbar .navbar-brand{
+    color: black;
+}
+.navbar .nav-link{
+    color: black;
+    margin-right: 20px;
+}
+.navbar-nav {
+    font-size: 20px;
+    font-family:'Cormorant Garamond', serif ;
+}
+.item_contents{
+    width: 30%;
+    position: fixed;
+    right: 0;
+    display: none;
+}
+.nav-item:hover .item_contents {
+    display: block;
+}
+.contents_menu > ul {
+    display: flex;
+    padding: 20px 0;
+}
+.contents_menu > ul > li {
+    color: #fff;
+    width: 220px;
+    list-style-type: none;
+}
+.contents_menu > ul > li h4 {
+    padding: 3px 0 12px 0;
+    font-size: 20px;
+}
+.contents_menu > ul > li ul li{
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.banner-wrapper{
+   background-image: url(./images/bg_banner.jpeg);    
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 1300px;
+}
+
+.title-img{
+    max-width: 80%;
+    padding-bottom: 50px;
+}
+
+.moving-left {
+    white-space: nowrap;
+    animation: flowing 18s linear infinite;
+    transform: translateX(100%);
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+
+@keyframes flowing {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-100%,0);
+    }
+}
+
+.shop {
+    background-image: url("./images/shop_image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1300px;
+}
+.shop img{
+    max-width: 33%;
+    padding-top: 690px;
+    display: block;
+    margin: 0 auto;
+}
+
+.post {
+    display: inline-block;
+}
+
+/* CONTAINER */
+.small-container {
+    padding: 30px;
+}
+.row {
+    margin-left: 0;
+}
+.col-3 {
+    padding-bottom: 50px;
+}
+.col-3 a img{
+    transition: all .2s ease-in-out;
+}
+.col-3 a img:hover{
+    transform: scale(.9); 
+}
+.col-3 h4 {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family:'Cormorant Garamond', serif ;
+}
+.col-3 img {
+    width: 100%;
+}
+
+.back-to-position {
+    opacity: 0;
+    transition: 1.2s;
+}
+.back-to-position.to-top {
+    transform: translateY(20px);
+}
+.show .back-to-position {
+    opacity: 1;
+    transform: translateY(0);
+}
+.show .back-to-position.delay-0 {
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1 {
+    transition-delay: .3s;
+}
+.show .back-to-position.delay-2 {
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3 {
+    transition-delay: .9s;
+}
+.show .back-to-position.delay-4 {
+    transition-delay: 1.2s;
+}
+.show .back-to-position.delay-5 {
+    transition-delay: 1.5s;
+}
+.show .back-to-position.delay-6 {
+    transition-delay: 1.8s;
+}
+.show .back-to-position.delay-7 {
+    transition-delay: 2.1s;
+}
+.show .back-to-position.delay-8 {
+    transition-delay: 2.4s;
+}
+.show .back-to-position.delay-9 {
+    transition-delay: 2.7s;
+}
+.show .back-to-position.delay-10 {
+    transition-delay: 3s;
+}
+
+/* <!-- HORIZONTAL SCROLL MENU --> */
+.scrollmenu {
+    height: 1120px ;
+    padding: 560px 10px;
+    overflow: auto;
+    white-space: nowrap;
+    font-family:'Cormorant Garamond', serif ;
+    font-size: 100px;
+    background-image: url(./images/archive/tumblr_p3j6lqF5C11utec1vo1_1280.jpeg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1300px;
+  }
+  
+.scrollmenu a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 30px;
+    margin-right: 70px;
+    text-decoration: none;
+    z-index: 9;
+  }
+  
+.scrollmenu a:hover {
+    color: aqua;
+    position: relative;
+  }
+.scrollmenu p {
+    font-size: 35px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    line-height: 1.2;
+}
+.hide1{
+    display: none;
+}
+.hide1 img {
+    max-width: 60%;
+    height: auto;
+}
+.marseille:hover + .hide1 {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.hide2 {
+    display: none;
+}
+.hide2 img {
+    max-width: 60%;
+    height: auto;
+}
+.arles:hover + .hide2 {
+    display: block;
+    position: absolute;
+    left: 650px;
+    bottom: 30px;
+}
+
+.hide3 {
+    display: none;
+}
+.hide3 img {
+    max-width: 60%;
+    height: auto;
+}
+.paris:hover + .hide3 {
+    display: block;
+    position: absolute;
+    left: 1000px;
+    bottom: 30px;
+}
+
+.hide4 {
+    display: none;
+}
+.hide4 img {
+    max-width: 50%;
+    height: auto;
+}
+.citron:hover + .hide4 {
+    display: block;
+    position: absolute;
+    left: 1000px;
+    top: 120px;
+}
+
+.hide5 {
+    display: none;
+}
+.hide5 img {
+    max-width: 57%;
+    height: auto;
+}
+.studio:hover + .hide5 {
+    display: block;
+    position: absolute;
+    left: 800px;
+    top: 170px;
+}
+
+.hide6 {
+    display: none;
+}
+.hide6 img {
+    max-width: 89%;
+    height: auto;
+}
+.medit:hover + .hide6 {
+    display: block;
+    position: absolute;
+    left: 800px;
+    top: 170px;
+}
+
+.hide7 {
+    display: none;
+}
+.hide7 img {
+    max-width: 78%;
+    height: auto;
+}
+.holiday:hover + .hide7 {
+    display: block;
+    position: absolute;
+    left: 1680px;
+    bottom: 10px;
+}
+
+
+
+
+
+/* 반응형 구현 */
+@media (max-width:768px){
+    .banner-wrapper,
+    .scrollmenu {
+        height: 300px;
+    } 
+    .title-img{
+        max-width: 50%;
+    }
+}
+
+.row {
+    width: 100%;
+}
+@media (max-width:480px){
+    .banner-wrapper {
+        height: 200px;
+    } 
+}
+
